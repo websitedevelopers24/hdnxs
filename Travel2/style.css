@@ -1,0 +1,133 @@
+:root {
+    --main-color: #002b5c; /* Define your main color here */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/background.jpeg') no-repeat center center fixed; /* Use 'background.jpeg' from the 'images' folder */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 41, 92, 0.8); /* Semi-transparent background */
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 15%; /* Adjust the logo size */
+    height: auto;
+    margin-bottom: 20px; /* Space between logo and title */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.container {
+    margin: 250px 0;
+    padding: 70px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 600px;
+    text-align: center;
+}
+
+.tab {
+    display: block;
+    margin: 10px auto;
+    padding: 25px 88px; /* Reduced padding for smaller boxes */
+    background-color: #0045e6;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 30px; /* Larger font size */ /* Changed from 25px to 30px */
+    width: 100%;
+    max-width: 300px; /* Smaller max-width for the buttons */
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tab:hover {
+    background-color: #005bb5;
+    transform: translateY(-5px);
+}
+
+/*@media (max-width: 768px) {
+    .tab {
+        width: 1.25rem;
+        font-size: 32px; /* Adjusted font size for smaller screens */ /* Changed from 28px to 32px */
+   /* }
+}*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .tab {
+        font-size: 1.25rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .tab {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+.star {
+    color: yellow;
+    margin-left: 5px; /* Adds space between the text and the star */
+}
+
+footer {
+    background-color: rgba(0, 43, 92, 0.8); /* Semi-transparent background */
+    width: 100%;
+    padding: 19px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: white; /* Ensures the footer text is white */
+}
