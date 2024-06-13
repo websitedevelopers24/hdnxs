@@ -2,6 +2,12 @@
     --main-color: #002b5c; /* Define your main color here */
 }
 
+@media only screen and (max-width: 800px) {
+    .back {
+      background:none !Important;
+    }
+  }
+
 body {
     font-family: 'Arial', sans-serif;
     background: url('images/background.jpeg') no-repeat center center fixed; /* Use 'background.jpeg' from the 'images' folder */
